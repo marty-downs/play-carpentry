@@ -36,7 +36,16 @@ cats <- rbind(cats, newRow)
 cats[-5,] 
 cats[-4:6,]
 
+cats<-cats[1,2,3,6]
 
+
+#adding a new level of the factor coat
+levels(cats$coat) <- c(levels(cats$coat), "tortoiseshell")
+cats <- rbind(cats, list("tortoiseshell", 3.3, TRUE, 9))
+cats
+
+cats[-4,]
+cats[-5,]
 df <- data.frame(first.name ="Marty",
                  last.name = "Downs",
                  lucky.number =13)
