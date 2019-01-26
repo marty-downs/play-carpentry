@@ -19,3 +19,28 @@ my_vector <-vector(length = 3)
 my_vector
 #create new vectr with characters
 type.convert(my_vector, character( ))
+
+age <- c(2,3,5)
+cbind(cats,age)
+#this gave me an error
+#age <- c(2,3,5,12)
+
+nrow(cats)
+length (age)
+cats
+nrow(cats)
+newRow <- list("tortoiseshell", 3.3, 1.3, TRUE)
+cats[4,1]<- newRow[1,1]
+cats <- rbind(cats, newRow)
+ cats[-4,]
+cats[-5,] 
+cats[-4:6,]
+
+
+df <- data.frame(first.name ="Marty",
+                 last.name = "Downs",
+                 lucky.number =13)
+df
+#starting gapminder exercise
+gapminder <-read.csv("data/gapminder_data.csv")
+str(gapminder)
